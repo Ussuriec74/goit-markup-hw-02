@@ -1,6 +1,8 @@
 :root {
+  --body-backgr-color: #ffffff;
   --basic-text-color: #757575;
   --secondary-text-color: #ffffff;
+  --main-title-color: #ffffff;
   --basic-title-color: #212121;
   --secondary-titele-color: #000000;
   --accent-color: #2196f3;
@@ -8,14 +10,22 @@
   --header-hover-color: #2196f3;
   --header-logo-color: #000000;
   --header-contact-color: #757575;
+  --header-backgr-color: #ececec;
   --btn-color: #f5f4fa;
   --btn-text-color: #212121;
+  --btn--backgr-color: #2196f3;
   --secondary-btn-color: #ffffff;
+  --footer-logo-accent-color: #ffffff;
+  --footer-backgr-color: #2f303a;
+  --footer-address-color: #ffffff;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 00.03em;
   color: var(--basic-text-color);
+  background-color: var(--body-backgr-color);
 }
 ul {
   list-style: none;
@@ -25,16 +35,15 @@ a {
 }
 /* ---------HEADER--------- */
 header {
-  background-color: #ececec;
+  background-color: var(--header-backgr-color);
 }
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  line-height: 100%;
   vertical-align: Top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .header-logo-accent {
@@ -45,9 +54,8 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
   vertical-align: Top;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--header-link-color);
 }
 .header-link:hover {
@@ -85,7 +93,7 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 .hero-btn {
   font-family: inherit;
@@ -95,7 +103,7 @@ header {
   display: flex;
   letter-spacing: 0.06em;
   color: var(--secondary-btn-color);
-  background-color: #2196f3;
+  background-color: var(--btn--backgr-color);
   cursor: pointer;
 }
 /* --------FEATURES-------- */
@@ -140,25 +148,25 @@ header {
 }
 /* ---------FOOTER--------- */
 footer {
-  background: #2f303a;
+  background: var(--footer-backgr-color);
 }
 .footer-logo-accent {
-  color: #ffffff;
+  color: var(--footer-logo-accent-color);
 }
 .address-contact-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 .address .address-link {
   font-family: inherit;
-  font-style: inherit;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--footer-address-color);
 }
 /*---------PORTFOLIO--------- */
 .portfolio-filtr-btn {
@@ -185,7 +193,7 @@ footer {
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 20;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--basic-title-color);
 }
