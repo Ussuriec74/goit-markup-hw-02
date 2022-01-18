@@ -153,8 +153,11 @@ footer {
 .footer-logo-accent {
   color: var(--footer-logo-accent-color);
 }
-.address-contact-link {
+.address {
   font-style: normal;
+}
+.address-contact-link {
+  font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
